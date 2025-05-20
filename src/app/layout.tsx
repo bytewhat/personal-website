@@ -4,6 +4,7 @@ import "./globals.css";
 import {NavBar} from "@/components/navbar";
 import {ThemeProvider} from "@/components/theme-provider";
 import {Footer} from "@/components/footer";
+import {Analytics} from "@vercel/analytics/next"
 
 const jetbrainsMono = JetBrains_Mono({
     subsets: ["latin"],
@@ -83,6 +84,7 @@ export default function RootLayout({
                 <Footer/>
             </footer>
         </ThemeProvider>
+        <Analytics/>
         </body>
         </html>
     );
